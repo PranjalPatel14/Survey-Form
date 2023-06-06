@@ -1,0 +1,46 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+}
+main{
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    min-width: 300px;
+    width: 60vw;
+    background-color: darkblue;
+    color: white;
+    padding: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15 ease-in-out;
+}
+input, textarea, select, #roles, button{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    /* border-color: 1px solid white; */
+}
+
+#inline{
+    width: unset;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+#submit{
+    background-color: green;
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}

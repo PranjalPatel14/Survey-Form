@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main id="main">
+      <form id="survey-form">
+        <label for="name" id="name-label"><p>Name:</p>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label"><p>Email:</p>
+          <input type="email" id="email" placeholder="Enter your Email" required/>
+        </label>
+        <label for="age" id="number-label"
+          ><p>Age<em>(optional)</em>:</p>
+          <input type="number" id="number"n placeholder="Age" min="18" max="99"/>
+        </label>
+        <label for="curr_role" id="roles"><p>Which option best describes your current role?</p>
+          <select id="dropdown">
+            <option id="">Select Current Role</option>
+            <option id="student">Student</option>
+            <option id="fulltimejob">Full Time Job</option>
+            <option id="fulltimelearner">Full Time Learner</option>
+            <option id="nottosay">Prefer not to say</option>
+            <option id="other">Other</option>
+          </select>
+        </label>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definetly">
+          <input id="inline" type="radio" name="recommend" value="definetly"/>Definetly</label>
+        <label for="maybe">
+          <input id="inline" type="radio" name="recommend" value="Maybe"/>Maybe
+        </label>
+        <label for="Not sure">
+          <input id="inline" type="radio" name="recommend" value="notsure" />Not sure</label>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown">
+          <option id="">Select an option</option>
+          <option id="challenges">Challenges</option>
+          <option id="Projects">Projects</option>
+          <option id="Community">Community</option>
+          <option id="Open Source">Open Source</option>
+        </select>
+        <p>
+          What would you like to see improved?
+        <span class="clue">(Check all that apply)</span></p>
+        <label for="Front-end Projects"><input type="checkbox" name="chk_impr" value="Front-end Projects" id="inline"/>Front-end Projects
+        </label>
+        <label for="Back-end Projects"><input type="checkbox" name="chk_impr" value="Back-end Projects" id="inline"/>Back-end Projects</label>
+        <label for="Data Visualization"><input type="checkbox" name="chk_impr" value="Data Visualization" id="inline"/>Data Visualization</label>
+  
+        <label for="Challenges"><input type="checkbox" name="chk_impr" value="Challenges" id="inline"/>Challenges</label>
+        
+        <label for="Open Source Community"><input type="checkbox" name="chk_impr" value="Open Source Community" id="inline"/>Open Source Community</label>
+  
+        <label for="Gitter help rooms"><input type="checkbox" name="chk_impr" value="Gitter help rooms" id="inline"/>Gitter help rooms</label>
+  
+        <label for="Videos"><input type="checkbox" name="chk_impr" value="Videos" id="inline"/>Videos</label>
+  
+        <label for="City Meetups"><input type="checkbox" name="chk_impr" value="City Meetups" id="inline"/>City Meetups</label>
+  
+        <label for="Wiki"><input type="checkbox" name="chk_impr" value="Wiki" id="inline"/>Wiki</label>
+  
+        <label for="Forum"><input type="checkbox" name="chk_impr" value="Forum" id="inline"/>Forum</label>
+  
+        <label for="Additional Courses"><input type="checkbox" name="chk_impr" value="Additional Courses" id="inline"/>Additional Courses</label>
+
+
+        <p>Any comments or suggestions?</p>
+        <textarea id="sugges" rows="4" cols="50">Enter your comment here...</textarea>
+    
+        <button type="Submit" id="submit" value="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
